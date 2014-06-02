@@ -20,7 +20,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 2.3.0'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -29,10 +29,21 @@ gem 'jquery-rails'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn-rails'
 
 # Deploy with Capistrano
 # gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'activeadmin'
+gem 'rspec-rails'
+
+gem 'cucumber-rails', :require => false, :group => :test
+gem 'dotenv-rails', :groups => [:development, :test]
+gem 'factory_girl_rails', :group => :test
+gem 'haml-rails'
+gem 'database_cleaner', :group => :test
+gem 'watir', :group => :test
+gem 'watir-webdriver', :group => :test

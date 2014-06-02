@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-RailsInterview::Application.config.secret_token = '13182fc2efce0c0f8549b3fead86b5f6a83a3504024ae941fba13710caf0f586f9a9811162be560b664f4995b9592263fb2e4e023ac7389553e89ae4a510bd13'
+RailsInterview::Application.config.secret_token = ENV['APPLICATION_SECRET_TOKEN'] || '58f9258ae5e8929702a01151de1d838907cc46b468595b42cfb03859cb6319e3a5f69e49917e4fc2e7eb37e0cc47576c456df71556c43b000f40a7a94a5a0fe0'
